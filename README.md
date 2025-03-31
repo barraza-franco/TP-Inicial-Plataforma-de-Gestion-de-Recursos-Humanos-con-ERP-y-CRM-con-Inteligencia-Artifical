@@ -1,11 +1,57 @@
+# README.md
 
-crear un entorno virtual
-`py -m venv sklearn-env`
-`.\sklearn-env\Scripts\activate`   # En Windows
+## 📦 Configuración del entorno y ejecución del proyecto
 
-Realizar un comando para instalar dependencias desde requirements.txt
-1. Instalar dependencias: `py -m pip install -r dependencias.txt`
+Este proyecto agrupa empleados del sector IT en clusters según su rol, tecnología y seniority, y les sugiere cursos de mejora personalizados.
 
-ejecutar programita
-2. Ejecutar: `python main.py`
-3. Ver el archivo generado en `/data/recomendaciones/
+---
+### ✅ Requisitos
+- Python 3.12
+- pip habilitado (`py -m ensurepip` si no está disponible)
+
+---
+### 🔧 1. Crear entorno virtual 
+
+```bash
+py -m venv sklearn-env
+```
+
+Activar el entorno virtual:
+
+```bash
+.\sklearn-env\Scripts\activate
+```
+
+---
+
+### 📥 2. Instalar dependencias
+
+Instalar librerías necesarias desde `dependencias.txt`:
+
+```bash
+py -m pip install -r dependencias.txt
+```
+
+---
+
+### 🚀 3. Ejecutar el programa
+
+Desde la raíz del proyecto, ejecutar:
+
+```bash
+py src/_init_.py
+```
+
+Esto generará un archivo con recomendaciones en la carpeta:
+
+```
+data/recomendaciones/
+```
+
+El archivo tendrá un nombre como:
+```
+recomendaciones_empleados_20250330_1542.csv
+```
+
+---
+
