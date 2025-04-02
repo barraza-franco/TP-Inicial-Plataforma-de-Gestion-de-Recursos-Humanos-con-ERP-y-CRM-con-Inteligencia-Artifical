@@ -1,0 +1,17 @@
+{
+  "Python": ["Python Intermedio", "Python Avanzado", "Machine Learning con Python"],
+  "Java": ["Java Intermedio", "Java Avanzado", "Spring Boot"],
+  "JavaScript": ["JS Intermedio", "JS Avanzado", "React"],
+  "Cypress": ["Cypress Intermedio", "Cypress Avanzado", "Test Automation Frameworks"],
+  "Selenium": ["Selenium Intermedio", "Selenium Avanzado", "Automatización con Python"],
+  "Scrum": ["Scrum Intermedio", "Scrum Avanzado", "Gestión Ágil de Proyectos"],
+  "PHP": ["PHP Intermedio", "PHP Avanzado", "Laravel"],
+  ".NET": [".NET Intermedio", ".NET Avanzado", "Microservicios con .NET"],
+  "SQL": ["SQL Intermedio", "SQL Avanzado", "Optimización de Consultas"],
+  "Node.js": ["Node Intermedio", "Node Avanzado", "APIs con Express"],
+  "UX/UI": ["UX/UI Intermedio", "UX Research", "Design Systems Avanzado"],
+  "Web": ["Testing Web Intermedio", "Testing Web Avanzado", "Usabilidad Web"],
+  "Mobile": ["Testing Mobile Intermedio", "Testing Mobile Avanzado", "Automatización Mobile"]
+}
+
+  
