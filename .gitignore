@@ -1,2 +1,4 @@
 sklearn-env/
 data/resultados-recomendaciones/
+src/__pycache__/
+utils/__pycache__/
