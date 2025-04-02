@@ -39,13 +39,13 @@ py -m pip install -r dependencias.txt
 Desde la raíz del proyecto, ejecutar:
 
 ```bash
-py src/_init_.py
+py /main.py
 ```
 
 Esto generará un archivo con recomendaciones en la carpeta:
 
 ```
-data/recomendaciones/
+data/resultados_recomendaciones/
 ```
 
 El archivo tendrá un nombre como:

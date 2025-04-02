@@ -1,4 +1,7 @@
 sklearn-env/
-data/resultados-recomendaciones/
 src/__pycache__/
 utils/__pycache__/
+# Ignorar contenido de resultados-recomendaciones
+data/resultados-recomendaciones/*
+# Pero mantener el marcador
+!data/resultados-recomendaciones/.gitkeep
