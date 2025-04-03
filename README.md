@@ -8,6 +8,7 @@ Este proyecto agrupa empleados del sector IT en clusters según su rol, tecnolog
 ### ✅ Requisitos
 - Python 3.12
 - pip habilitado (`py -m ensurepip` si no está disponible)
+- Estar situado dentro de la carpeta del Proyecto TP-Inicial-Plataforma-de-Gestion-de-Recursos-Humanos-con-ERP-y-CRM-con-Inteligencia-Artifical
 
 ---
 ### 🔧 1. Crear entorno virtual 
@@ -39,7 +40,7 @@ py -m pip install -r dependencias.txt
 Desde la raíz del proyecto, ejecutar:
 
 ```bash
-py /main.py
+py main.py
 ```
 
 Esto generará un archivo con recomendaciones en la carpeta:
