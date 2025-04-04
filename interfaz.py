@@ -41,10 +41,11 @@ if uploaded_file:
         recomendaciones_df = pd.DataFrame(recomendaciones)
         st.subheader("📋 Recomendaciones generadas")
         st.dataframe(recomendaciones_df)
-
+        
+        nombre_archivo = guardar_datos_csv(recomendaciones)
         # Descargar CSV
-        nombre_archivo = f"recomendaciones_empleados_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
-        recomendaciones_df.to_csv(nombre_archivo, index=False)
+    #    nombre_archivo = f"recomendaciones_empleados_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+    #    recomendaciones_df.to_csv(nombre_archivo, index=False)
         with open(nombre_archivo, "rb") as f:
             st.download_button("📥 Descargar CSV", f, file_name=nombre_archivo)
 
