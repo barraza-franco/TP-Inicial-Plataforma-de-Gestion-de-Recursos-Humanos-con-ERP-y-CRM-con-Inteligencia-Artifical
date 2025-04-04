@@ -27,7 +27,7 @@ if uploaded_file:
     if st.button("Ejecutar análisis"):
         df_empleados, X = transformar_empleados(empleados)
 
-        mejor_k = encontrar_mejor_k(X, rango=range(2, 6))
+        mejor_k = encontrar_mejor_k_clusters(X, range(2, 6))
         st.info(f"🔢 Mejor cantidad de clusters: {mejor_k}")
 
         modelo_final, etiquetas = entrenar_modelo_final(X, mejor_k)
