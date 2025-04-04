@@ -7,7 +7,7 @@ def generar_recomendaciones(empleados, cursos_base, cursos_links, df_empleados):
         rol = empleados[index_cluster]["rol"]
 
         if tecnologia not in cursos_base:
-            curso = "Curso no disponible"
+            curso = "No tenemos cursos disponibles para: "+ empleados[index_cluster]["rol"]  + " " + empleados[index_cluster]["tecnologia"]
             link = "-"
         else:
             if seniority == "Junior":

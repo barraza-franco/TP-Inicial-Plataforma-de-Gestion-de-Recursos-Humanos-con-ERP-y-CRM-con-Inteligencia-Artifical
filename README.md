@@ -40,7 +40,7 @@ py -m pip install -r dependencias.txt
 Desde la raíz del proyecto, ejecutar:
 
 ```bash
-py main.py
+streamlit run interfaz.py
 ```
 
 Esto generará un archivo con recomendaciones en la carpeta:

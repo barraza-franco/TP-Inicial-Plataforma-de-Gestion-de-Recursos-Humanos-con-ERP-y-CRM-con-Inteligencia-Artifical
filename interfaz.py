@@ -7,11 +7,7 @@ import numpy as np
 from datetime import datetime
 import os
 
-# from utils.file_loader import load_json_from_file
-# from src.clustering import transformar_empleados, encontrar_mejor_k_clusters, entrenar_modelo_final
-# from src.recomendaciones import generar_recomendaciones
-# from src.exportacion import guardar_datos_csv
-# from src.visualizacion import visualizacion_2D_PCA
+
 from src.logica import ejecutar_logica
 
 st.set_page_config(page_title="Clustering de Empleados", layout="centered")
