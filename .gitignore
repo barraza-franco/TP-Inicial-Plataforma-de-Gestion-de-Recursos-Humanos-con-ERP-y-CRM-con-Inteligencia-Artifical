@@ -5,3 +5,7 @@ utils/__pycache__/
 data/resultados-recomendaciones/*
 # Pero mantener el marcador
 !data/resultados-recomendaciones/.gitkeep
+# Ignorar contenido de modelos-entranados
+data/modelos-entrenados/*
+# Pero mantener el marcador
+!data/modelos-entranados/.gitkeep
