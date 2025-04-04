@@ -1,46 +1,38 @@
+# streamlit_app.py
+import streamlit as st
+import pandas as pd
+import json
+import matplotlib.pyplot as plt
+import numpy as np
+from datetime import datetime
 import os
-import webbrowser
-from utils.file_loader import load_json_from_file
-from src.clustering import transformar_empleados, encontrar_mejor_k_clusters, entrenar_modelo_final
-from src.recomendaciones import generar_recomendaciones
-from src.exportacion import guardar_datos_csv
-from src.visualizacion import visualizacion_2D_PCA
 
-# -----------------------------------------------------------------------------------
-# 1. Carga inicial de datos
-empleados = load_json_from_file("data/empleados.json")
-cursos_base = load_json_from_file("data/cursos-base.json")
-cursos_links = load_json_from_file("data/cursos-link.json")
 
-# -----------------------------------------------------------------------------------
-# 2. Transformar datos en variables numéricas
-df_empleados, X = transformar_empleados(empleados)
+from src.logica import ejecutar_logica
 
-# -----------------------------------------------------------------------------------
-# 3. Encontrar mejor cantidad de clusters con Silhouette Score
-mejor_k = encontrar_mejor_k_clusters(X, range(2, 6))
+st.set_page_config(page_title="Clustering de Empleados", layout="centered")
+st.title("🔍 Clustering de empleados y recomendación de cursos")
+st.markdown("Subí un archivo `.json` con empleados para agruparlos y sugerir cursos.")
 
-# -----------------------------------------------------------------------------------
-# 4. Entrenar modelo final con mejor k
-modelo_final, df_empleados["cluster"] = entrenar_modelo_final(X, mejor_k)
+uploaded_file = st.file_uploader("📁 Subí tu archivo JSON", type="json")
 
-# -----------------------------------------------------------------------------------
-# 5. Recomendaciones personalizadas por cluster y empleado
-recomendaciones = generar_recomendaciones(empleados, cursos_base, cursos_links, df_empleados)
+if uploaded_file:
+    empleados = json.load(uploaded_file)
+    st.success("✅ Archivo cargado correctamente")
+    st.json(empleados[:5])
 
-# -----------------------------------------------------------------------------------
-# 6. Guardar recomendaciones en CSV con fecha y hora
-archivo_recomendaciones = guardar_datos_csv(recomendaciones)
+    if st.button("Ejecutar análisis"):
 
-# -----------------------------------------------------------------------------------
-# 7. Abrir el archivo CSV en una nueva pestaña
-ruta_absoluta = os.path.abspath(archivo_recomendaciones)
-webbrowser.open(f"file://{ruta_absoluta}")
+        recomendaciones_df, df_empleados, X, mejor_k, modelo_final, nombre_archivo, fig = ejecutar_logica(empleados)
+        st.subheader("📋 Recomendaciones generadas")
+        st.dataframe(recomendaciones_df)
+        
+        # Descargar CSV
 
-# -----------------------------------------------------------------------------------
-# 8. Visualización 2D de los clusters con PCA
-visualizacion_2D_PCA(df_empleados, X)
+        with open(nombre_archivo, "rb") as f:
+            st.download_button("📥 Descargar CSV", f, file_name=nombre_archivo)
 
-# -----------------------------------------------------------------------------------
-# 9. Fin del script
-print("\n✅ Script finalizado con éxito.")
+        # Visualización de clusters
+        st.subheader("📊 Visualización de clusters")
+
+        st.pyplot(fig)
