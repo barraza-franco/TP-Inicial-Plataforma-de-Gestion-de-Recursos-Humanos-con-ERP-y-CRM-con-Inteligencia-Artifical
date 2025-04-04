@@ -28,5 +28,5 @@ def entrenar_modelo_final(X, mejor_k):
     from sklearn.cluster import KMeans
     modelo_final = KMeans(n_clusters=mejor_k, random_state=0)
     etiquetas = modelo_final.fit_predict(X)
-    return modelo_final, etiquetas
+    return  etiquetas
 
