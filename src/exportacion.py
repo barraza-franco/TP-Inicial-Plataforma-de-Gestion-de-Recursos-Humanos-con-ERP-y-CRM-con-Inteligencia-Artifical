@@ -1,21 +1,33 @@
-def guardar_datos_csv(recomendaciones):
-    from datetime import datetime   # ⏰ Para generar nombres únicos usando fecha y hora
-    import pandas as pd             # 📦 Para convertir datos a DataFrame y guardarlos como CSV
+def guardar_datos_csv(recomendaciones, df_empleados):
+    """
+    Guarda un archivo CSV combinando:
+    - Las recomendaciones por empleado
+    - El cluster asignado
+    - Y todas las habilidades con sus niveles (para referencia)
+    """
+    import pandas as pd
+    from datetime import datetime
+    import os
 
-    # 🔢 Obtenemos el timestamp actual para usarlo en el nombre del archivo
     ahora = datetime.now().strftime("%Y%m%d_%H%M")
-
-    # 📝 Definimos la ruta y el nombre del archivo de salida
     nombre_archivo = f"data/resultados-recomendaciones/recomendaciones_empleados_{ahora}.csv"
+    os.makedirs("data/resultados-recomendaciones", exist_ok=True)
 
-    # 🧱 Convertimos la lista de recomendaciones (diccionarios) a un DataFrame
-    recomendaciones_df = pd.DataFrame(recomendaciones)
+    # Convertimos recomendaciones a DataFrame
+    df_recomendaciones = pd.DataFrame(recomendaciones)
 
-    # 💾 Guardamos el DataFrame como archivo CSV, sin incluir el índice de pandas
-    recomendaciones_df.to_csv(nombre_archivo, index=False)
+    # Filtramos solo columnas de habilidades (float entre 0 y 1)
+    columnas_habilidad = df_empleados.select_dtypes(include=["float", "int"]).columns
+    columnas_habilidad = [col for col in columnas_habilidad if col not in ["PCA1", "PCA2", "cluster"]]
 
-    # ✅ Imprimimos confirmación en consola
-    print(f"\n💾 Archivo '{nombre_archivo}' guardado con éxito.")
+    # Tomamos solo las columnas de habilidades
+    df_habilidades = df_empleados[columnas_habilidad].reset_index(drop=True)
 
-    # 🔁 Retornamos la ruta al archivo para poder usarlo desde la interfaz
+    # Combinamos ambos
+    df_final = pd.concat([df_recomendaciones.reset_index(drop=True), df_habilidades], axis=1)
+
+    # Guardamos a CSV
+    df_final.to_csv(nombre_archivo, index=False)
+    print(f"💾 Archivo guardado: {nombre_archivo}")
+
     return nombre_archivo

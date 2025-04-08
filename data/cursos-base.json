@@ -1,17 +1,154 @@
 {
-  "Python": ["Python Intermedio", "Python Avanzado", "Machine Learning con Python"],
-  "Java": ["Java Intermedio", "Java Avanzado", "Spring Boot"],
-  "JavaScript": ["JS Intermedio", "JS Avanzado", "React"],
-  "Cypress": ["Cypress Intermedio", "Cypress Avanzado", "Test Automation Frameworks"],
-  "Selenium": ["Selenium Intermedio", "Selenium Avanzado", "Automatización con Python"],
-  "Scrum": ["Scrum Intermedio", "Scrum Avanzado", "Gestión Ágil de Proyectos"],
-  "PHP": ["PHP Intermedio", "PHP Avanzado", "Laravel"],
-  ".NET": [".NET Intermedio", ".NET Avanzado", "Microservicios con .NET"],
-  "SQL": ["SQL Intermedio", "SQL Avanzado", "Optimización de Consultas"],
-  "Node.js": ["Node Intermedio", "Node Avanzado", "APIs con Express"],
-  "UX/UI": ["UX/UI Intermedio", "UX Research", "Design Systems Avanzado"],
-  "Web": ["Testing Web Intermedio", "Testing Web Avanzado", "Usabilidad Web"],
-  "Mobile": ["Testing Mobile Intermedio", "Testing Mobile Avanzado", "Automatización Mobile"]
+  "APIs": [
+    "Introducción a APIs",
+    "APIs avanzado"
+  ],
+  "Adobe XD": [
+    "Introducción a Adobe XD",
+    "Adobe XD avanzado"
+  ],
+  "Análisis": [
+    "Introducción a Análisis",
+    "Análisis avanzado"
+  ],
+  "Automatización": [
+    "Introducción a Automatización",
+    "Automatización avanzado"
+  ],
+  "CI/CD": [
+    "Introducción a CI/CD",
+    "CI/CD avanzado"
+  ],
+  "CSS": [
+    "Introducción a CSS",
+    "CSS avanzado"
+  ],
+  "Comunicación": [
+    "Introducción a Comunicación",
+    "Comunicación avanzado"
+  ],
+  "Cypress": [
+    "Introducción a Cypress",
+    "Cypress avanzado"
+  ],
+  "Diagramas": [
+    "Introducción a Diagramas",
+    "Diagramas avanzado"
+  ],
+  "Diseño UX": [
+    "Introducción a Diseño UX",
+    "Diseño UX avanzado"
+  ],
+  "Docker": [
+    "Introducción a Docker",
+    "Docker avanzado"
+  ],
+  "Documentación": [
+    "Introducción a Documentación",
+    "Documentación avanzado"
+  ],
+  "Excel": [
+    "Introducción a Excel",
+    "Excel avanzado"
+  ],
+  "Figma": [
+    "Introducción a Figma",
+    "Figma avanzado"
+  ],
+  "Gestión de Equipos": [
+    "Introducción a Gestión de Equipos",
+    "Gestión de Equipos avanzado"
+  ],
+  "Gestión de equipos": [
+    "Introducción a Gestión de equipos",
+    "Gestión de equipos avanzado"
+  ],
+  "Git": [
+    "Introducción a Git",
+    "Git avanzado"
+  ],
+  "Go": [
+    "Introducción a Go",
+    "Go avanzado"
+  ],
+  "HTML": [
+    "Introducción a HTML",
+    "HTML avanzado"
+  ],
+  "Investigación UX": [
+    "Introducción a Investigación UX",
+    "Investigación UX avanzado"
+  ],
+  "JIRA": [
+    "Introducción a JIRA",
+    "JIRA avanzado"
+  ],
+  "Java": [
+    "Introducción a Java",
+    "Java avanzado"
+  ],
+  "JavaScript": [
+    "Introducción a JavaScript",
+    "JavaScript avanzado"
+  ],
+  "Kanban": [
+    "Introducción a Kanban",
+    "Kanban avanzado"
+  ],
+  "MongoDB": [
+    "Introducción a MongoDB",
+    "MongoDB avanzado"
+  ],
+  "Node.js": [
+    "Introducción a Node.js",
+    "Node.js avanzado"
+  ],
+  "Postman": [
+    "Introducción a Postman",
+    "Postman avanzado"
+  ],
+  "Prototipado": [
+    "Introducción a Prototipado",
+    "Prototipado avanzado"
+  ],
+  "Python": [
+    "Introducción a Python",
+    "Python avanzado"
+  ],
+  "React": [
+    "Introducción a React",
+    "React avanzado"
+  ],
+  "Requisitos": [
+    "Introducción a Requisitos",
+    "Requisitos avanzado"
+  ],
+  "SQL": [
+    "Introducción a SQL",
+    "SQL avanzado"
+  ],
+  "Scrum": [
+    "Introducción a Scrum",
+    "Scrum avanzado"
+  ],
+  "Selenium": [
+    "Introducción a Selenium",
+    "Selenium avanzado"
+  ],
+  "Spring": [
+    "Introducción a Spring",
+    "Spring avanzado"
+  ],
+  "TestRail": [
+    "Introducción a TestRail",
+    "TestRail avanzado"
+  ],
+  "Testing": [
+    "Introducción a Testing",
+    "Testing avanzado"
+  ],
+  "UI Design": [
+    "Introducción a UI Design",
+    "UI Design avanzado"
+  ]
 }
-
-  

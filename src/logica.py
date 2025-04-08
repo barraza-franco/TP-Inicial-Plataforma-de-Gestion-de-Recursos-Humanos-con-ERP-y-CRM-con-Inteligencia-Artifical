@@ -25,11 +25,14 @@ def ejecutar_logica(empleados):
     cursos_links = load_json_from_file("data/cursos-link.json")
 
     # 🎯 6. Generamos recomendaciones personalizadas por empleado
-    recomendaciones = generar_recomendaciones(empleados, cursos_base, cursos_links, df_empleados)
+    #recomendaciones = generar_recomendaciones(empleados, cursos_base, cursos_links, df_empleados)
+
+
+    recomendaciones = generar_recomendaciones(df_empleados, empleados, cursos_base, cursos_links)
     recomendaciones_df = pd.DataFrame(recomendaciones)
 
     # 💾 7. Guardamos las recomendaciones como archivo CSV y recuperamos el nombre
-    nombre_archivo = guardar_datos_csv(recomendaciones)
+    nombre_archivo = guardar_datos_csv(recomendaciones, df_empleados)
 
     # 📊 8. Generamos un gráfico visual 2D de los clusters usando PCA
     fig = visualizacion_2D_PCA(df_empleados, X)

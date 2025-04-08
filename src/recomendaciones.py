@@ -1,42 +1,38 @@
-def generar_recomendaciones(empleados, cursos_base, cursos_links, df_empleados):
-    recomendaciones = []  # Lista que va a almacenar todas las recomendaciones generadas
+def generar_recomendaciones(df_empleados, empleados, cursos_base, cursos_links):
+    """
+    Recomienda un curso basado en la mejor habilidad del empleado.
+    """
+    recomendaciones = []
 
-    # 🔁 Recorremos cada fila del DataFrame de empleados con su cluster asignado
-    for index_cluster, row in df_empleados.iterrows():
-        # Obtenemos el número de cluster del empleado actual
-        cluster = row["cluster"]
+    columnas_habilidades = df_empleados.select_dtypes(include=["float", "int"]).columns
+    columnas_habilidades = [c for c in columnas_habilidades if c not in ["PCA1", "PCA2", "cluster", "seniority_num"]]
 
-        # Accedemos al JSON original para obtener seniority, tecnología y rol
-        seniority = empleados[index_cluster]["seniority"]
-        tecnologia = empleados[index_cluster]["tecnologia"]
-        rol = empleados[index_cluster]["rol"]
+    for i, row in df_empleados.iterrows():
+        # Detectar su mejor habilidad
+        habilidad_top = row[columnas_habilidades].sort_values(ascending=False).index[0]
+        seniority = empleados[i]["seniority"]
 
-        # 📚 Verificamos si hay cursos disponibles para esa tecnología
-        if tecnologia not in cursos_base:
-            # Si no hay cursos, generamos un mensaje personalizado
-            curso = "No tenemos cursos disponibles para: " + rol + " " + tecnologia
-            link = "-"
-        else:
-            # Si hay cursos, los asignamos según el seniority del empleado
+        # Seleccionar curso según seniority
+        if habilidad_top in cursos_base:
             if seniority == "Junior":
-                curso = cursos_base[tecnologia][0]  # Curso nivel intermedio
+                curso = cursos_base[habilidad_top][0]
             elif seniority == "Semi Senior":
-                curso = cursos_base[tecnologia][1]  # Curso nivel avanzado
+                curso = cursos_base[habilidad_top][1] if len(cursos_base[habilidad_top]) > 1 else cursos_base[habilidad_top][0]
             else:
-                curso = cursos_base[tecnologia][2]  # Curso complementario para Senior
-
-            # Obtenemos el link al curso desde el diccionario (o uno genérico si no está)
-            link = cursos_links.get(curso, "https://udeUngs.com/no-curso")
-
-        # 📋 Agregamos la recomendación generada a la lista
+                curso = cursos_base[habilidad_top][-1]
+            link = cursos_links.get(curso, "-")
+        else:
+            curso = "Sin curso disponible"
+            link = "-"
+        
         recomendaciones.append({
-            "rol": rol,
-            "tecnologia": tecnologia,
+            "rol": empleados[i]["rol"],
+            "tecnologia": empleados[i]["tecnologia"],
             "seniority": seniority,
-            "cluster": cluster,
+            "cluster": row["cluster"],
+            "habilidad_destacada": habilidad_top,
             "curso_recomendado": curso,
             "link": link
         })
 
-    # ✅ Devolvemos la lista completa con las recomendaciones
     return recomendaciones
