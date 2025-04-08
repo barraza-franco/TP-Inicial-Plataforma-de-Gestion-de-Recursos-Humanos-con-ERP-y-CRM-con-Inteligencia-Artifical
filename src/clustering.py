@@ -1,17 +1,33 @@
-# 🔄 Transformar empleados en variables numéricas para usar en modelos de Machine Learning
 def transformar_empleados(empleados):
+    """
+    Transforma empleados usando solo sus habilidades como base para clustering.
+
+    Returns:
+        df_empleados: DataFrame completo (con rol, seniority, etc. para visualización)
+        X: DataFrame con solo columnas de habilidades (float) para entrenar el modelo
+    """
     import pandas as pd
-    df = pd.DataFrame(empleados)  # Convertimos la lista de empleados (JSON) en un DataFrame
 
-    # 🔁 One-hot encoding: convertimos cada valor único de 'rol' y 'tecnologia'
-    # en columnas binarias (1 si lo tiene, 0 si no)
-    df = pd.get_dummies(df, columns=["rol", "tecnologia"])
+    # Cargar en DataFrame
+    df = pd.DataFrame(empleados)
 
-    # 🔢 Convertimos el seniority textual a numérico: Junior=0, Semi Senior=1, Senior=2
-    df["seniority_num"] = df["seniority"].map({"Junior": 0, "Semi Senior": 1, "Senior": 2})
+    # Guardar columnas originales útiles para visualización
+    df["rol_original"] = df["rol"]
+    df["tecnologia_original"] = df["tecnologia"]
 
-    # ✅ Retornamos el DataFrame completo y la versión sin la columna 'seniority' original
-    return df, df.drop(columns=["seniority"])
+    # Expandimos las habilidades como columnas (con valores float)
+    habilidades_df = df["habilidades"].apply(pd.Series).fillna(0)
+
+    # Reemplazamos el DataFrame de entrada
+    df = pd.concat([df.drop(columns=["habilidades"]), habilidades_df], axis=1)
+
+    # Solo usamos las habilidades como X para clustering
+    columnas_habilidades = habilidades_df.columns.tolist()
+    X = df[columnas_habilidades]
+
+    return df, X
+
+
 
 # 🔍 Busca el mejor número de clusters evaluando diferentes valores de k con Silhouette Score
 def encontrar_mejor_k_clusters(X, k_range):

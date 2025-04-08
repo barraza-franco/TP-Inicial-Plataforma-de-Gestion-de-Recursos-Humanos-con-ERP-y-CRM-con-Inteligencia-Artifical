@@ -1,0 +1,609 @@
+[
+    {
+        "rol": "Diseñador UX/UI",
+        "tecnologia": "Adobe XD",
+        "seniority": "Senior",
+        "habilidades": {
+            "Figma": 0.59,
+            "Adobe XD": 0.51,
+            "Prototipado": 0.26,
+            "Investigación UX": 0.73,
+            "UI Design": 0.18
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "Python",
+        "seniority": "Senior",
+        "habilidades": {
+            "Python": 0.53,
+            "Java": 0.22,
+            "SQL": 0.22,
+            "Docker": 0.01,
+            "Git": 0.8
+        }
+    },
+    {
+        "rol": "Tester QA Automation",
+        "tecnologia": "CI/CD",
+        "seniority": "Senior",
+        "habilidades": {
+            "Selenium": 0.1,
+            "Python": 0.07,
+            "Postman": 0.99,
+            "CI/CD": 0.86,
+            "Git": 0.86
+        }
+    },
+    {
+        "rol": "Tester QA Manual",
+        "tecnologia": "Excel",
+        "seniority": "Senior",
+        "habilidades": {
+            "JIRA": 0.94,
+            "Postman": 0.67,
+            "Excel": 0.72,
+            "TestRail": 0.55,
+            "Documentación": 0.8
+        }
+    },
+    {
+        "rol": "Scrum Master",
+        "tecnologia": "Comunicación",
+        "seniority": "Junior",
+        "habilidades": {
+            "Scrum": 0.53,
+            "Kanban": 0.21,
+            "Gestión de Equipos": 0.76,
+            "JIRA": 0.13,
+            "Comunicación": 0.95
+        }
+    },
+    {
+        "rol": "Desarrollador Fullstack",
+        "tecnologia": "Python",
+        "seniority": "Junior",
+        "habilidades": {
+            "Python": 0.84,
+            "JavaScript": 0.73,
+            "React": 0.08,
+            "SQL": 0.86,
+            "Docker": 0.2,
+            "Git": 0.99
+        }
+    },
+    {
+        "rol": "Scrum Master",
+        "tecnologia": "Comunicación",
+        "seniority": "Senior",
+        "habilidades": {
+            "Scrum": 0.55,
+            "Kanban": 0.83,
+            "Gestión de Equipos": 0.93,
+            "JIRA": 0.85,
+            "Comunicación": 0.63
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "SQL",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Python": 0.16,
+            "Java": 0.09,
+            "SQL": 0.64,
+            "Docker": 0.86,
+            "Git": 0.66
+        }
+    },
+    {
+        "rol": "Tester QA Manual",
+        "tecnologia": "Excel",
+        "seniority": "Senior",
+        "habilidades": {
+            "JIRA": 0.08,
+            "Postman": 0.39,
+            "Excel": 0.73,
+            "TestRail": 0.2,
+            "Documentación": 0.8
+        }
+    },
+    {
+        "rol": "Diseñador UX/UI",
+        "tecnologia": "Adobe XD",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Figma": 0.6,
+            "Adobe XD": 0.57,
+            "Prototipado": 0.32,
+            "Investigación UX": 0.29,
+            "UI Design": 0.69
+        }
+    },
+    {
+        "rol": "Scrum Master",
+        "tecnologia": "Scrum",
+        "seniority": "Junior",
+        "habilidades": {
+            "Scrum": 0.61,
+            "Kanban": 0.92,
+            "Gestión de Equipos": 0.76,
+            "JIRA": 0.54,
+            "Comunicación": 0.59
+        }
+    },
+    {
+        "rol": "Scrum Master",
+        "tecnologia": "Comunicación",
+        "seniority": "Senior",
+        "habilidades": {
+            "Scrum": 0.55,
+            "Kanban": 0.7,
+            "Gestión de Equipos": 0.03,
+            "JIRA": 0.62,
+            "Comunicación": 0.82
+        }
+    },
+    {
+        "rol": "Tester QA Automation",
+        "tecnologia": "Postman",
+        "seniority": "Junior",
+        "habilidades": {
+            "Selenium": 0.71,
+            "Python": 0.99,
+            "Postman": 0.81,
+            "CI/CD": 0.79,
+            "Git": 0.6
+        }
+    },
+    {
+        "rol": "Desarrollador Frontend",
+        "tecnologia": "JavaScript",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "JavaScript": 0.69,
+            "React": 0.81,
+            "HTML": 0.89,
+            "CSS": 0.97,
+            "Git": 0.55
+        }
+    },
+    {
+        "rol": "Tester QA Manual",
+        "tecnologia": "TestRail",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "JIRA": 0.14,
+            "Postman": 0.51,
+            "Excel": 0.99,
+            "TestRail": 0.56,
+            "Documentación": 0.0
+        }
+    },
+    {
+        "rol": "Tester QA Manual",
+        "tecnologia": "TestRail",
+        "seniority": "Senior",
+        "habilidades": {
+            "JIRA": 0.31,
+            "Postman": 0.64,
+            "Excel": 0.53,
+            "TestRail": 0.54,
+            "Documentación": 0.14
+        }
+    },
+    {
+        "rol": "Tester QA Automation",
+        "tecnologia": "Postman",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Selenium": 0.86,
+            "Python": 0.97,
+            "Postman": 0.54,
+            "CI/CD": 0.65,
+            "Git": 0.38
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "Python",
+        "seniority": "Junior",
+        "habilidades": {
+            "Python": 0.75,
+            "Java": 0.87,
+            "SQL": 0.76,
+            "Docker": 0.92,
+            "Git": 0.52
+        }
+    },
+    {
+        "rol": "Tester QA Manual",
+        "tecnologia": "TestRail",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "JIRA": 0.61,
+            "Postman": 0.36,
+            "Excel": 0.97,
+            "TestRail": 0.55,
+            "Documentación": 0.66
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "SQL",
+        "seniority": "Junior",
+        "habilidades": {
+            "Python": 0.54,
+            "Java": 0.52,
+            "SQL": 0.98,
+            "Docker": 0.34,
+            "Git": 0.3
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "Python",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Python": 0.9,
+            "Java": 0.31,
+            "SQL": 0.39,
+            "Docker": 0.6,
+            "Git": 0.97
+        }
+    },
+    {
+        "rol": "Tester QA Manual",
+        "tecnologia": "Excel",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "JIRA": 0.53,
+            "Postman": 0.89,
+            "Excel": 0.73,
+            "TestRail": 0.54,
+            "Documentación": 0.92
+        }
+    },
+    {
+        "rol": "Tester QA Automation",
+        "tecnologia": "CI/CD",
+        "seniority": "Senior",
+        "habilidades": {
+            "Selenium": 0.72,
+            "Python": 0.82,
+            "Postman": 0.73,
+            "CI/CD": 0.57,
+            "Git": 0.86
+        }
+    },
+    {
+        "rol": "Tester QA Manual",
+        "tecnologia": "TestRail",
+        "seniority": "Senior",
+        "habilidades": {
+            "JIRA": 0.5,
+            "Postman": 0.62,
+            "Excel": 0.69,
+            "TestRail": 0.94,
+            "Documentación": 0.65
+        }
+    },
+    {
+        "rol": "Diseñador UX/UI",
+        "tecnologia": "Figma",
+        "seniority": "Senior",
+        "habilidades": {
+            "Figma": 0.64,
+            "Adobe XD": 0.59,
+            "Prototipado": 0.86,
+            "Investigación UX": 0.72,
+            "UI Design": 0.97
+        }
+    },
+    {
+        "rol": "Desarrollador Frontend",
+        "tecnologia": "React",
+        "seniority": "Senior",
+        "habilidades": {
+            "JavaScript": 0.06,
+            "React": 0.5,
+            "HTML": 0.1,
+            "CSS": 0.33,
+            "Git": 0.8
+        }
+    },
+    {
+        "rol": "Desarrollador Fullstack",
+        "tecnologia": "Docker",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Python": 0.98,
+            "JavaScript": 0.61,
+            "React": 0.99,
+            "SQL": 0.61,
+            "Docker": 0.71,
+            "Git": 0.82
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "Java",
+        "seniority": "Junior",
+        "habilidades": {
+            "Python": 0.12,
+            "Java": 0.9,
+            "SQL": 0.89,
+            "Docker": 0.54,
+            "Git": 0.58
+        }
+    },
+    {
+        "rol": "Diseñador UX/UI",
+        "tecnologia": "Investigación UX",
+        "seniority": "Junior",
+        "habilidades": {
+            "Figma": 0.55,
+            "Adobe XD": 0.88,
+            "Prototipado": 0.93,
+            "Investigación UX": 0.79,
+            "UI Design": 0.98
+        }
+    },
+    {
+        "rol": "Scrum Master",
+        "tecnologia": "Scrum",
+        "seniority": "Senior",
+        "habilidades": {
+            "Scrum": 0.55,
+            "Kanban": 0.81,
+            "Gestión de Equipos": 0.76,
+            "JIRA": 0.91,
+            "Comunicación": 0.66
+        }
+    },
+    {
+        "rol": "Tester QA Automation",
+        "tecnologia": "CI/CD",
+        "seniority": "Senior",
+        "habilidades": {
+            "Selenium": 0.36,
+            "Python": 0.83,
+            "Postman": 0.63,
+            "CI/CD": 0.78,
+            "Git": 0.5
+        }
+    },
+    {
+        "rol": "Scrum Master",
+        "tecnologia": "JIRA",
+        "seniority": "Senior",
+        "habilidades": {
+            "Scrum": 0.6,
+            "Kanban": 0.14,
+            "Gestión de Equipos": 0.9,
+            "JIRA": 0.62,
+            "Comunicación": 0.2
+        }
+    },
+    {
+        "rol": "Desarrollador Fullstack",
+        "tecnologia": "SQL",
+        "seniority": "Junior",
+        "habilidades": {
+            "Python": 0.54,
+            "JavaScript": 0.65,
+            "React": 0.75,
+            "SQL": 0.75,
+            "Docker": 0.68,
+            "Git": 0.97
+        }
+    },
+    {
+        "rol": "Desarrollador Fullstack",
+        "tecnologia": "Docker",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Python": 0.77,
+            "JavaScript": 0.64,
+            "React": 0.71,
+            "SQL": 0.39,
+            "Docker": 0.79,
+            "Git": 0.16
+        }
+    },
+    {
+        "rol": "Tester QA Manual",
+        "tecnologia": "TestRail",
+        "seniority": "Senior",
+        "habilidades": {
+            "JIRA": 0.98,
+            "Postman": 0.85,
+            "Excel": 1.0,
+            "TestRail": 0.73,
+            "Documentación": 0.17
+        }
+    },
+    {
+        "rol": "Desarrollador Fullstack",
+        "tecnologia": "SQL",
+        "seniority": "Senior",
+        "habilidades": {
+            "Python": 0.15,
+            "JavaScript": 0.35,
+            "React": 0.95,
+            "SQL": 0.85,
+            "Docker": 0.71,
+            "Git": 0.12
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "Git",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Python": 0.68,
+            "Java": 0.98,
+            "SQL": 0.19,
+            "Docker": 0.4,
+            "Git": 0.73
+        }
+    },
+    {
+        "rol": "Scrum Master",
+        "tecnologia": "Kanban",
+        "seniority": "Senior",
+        "habilidades": {
+            "Scrum": 0.33,
+            "Kanban": 0.72,
+            "Gestión de Equipos": 0.34,
+            "JIRA": 0.17,
+            "Comunicación": 0.59
+        }
+    },
+    {
+        "rol": "Desarrollador Fullstack",
+        "tecnologia": "JavaScript",
+        "seniority": "Senior",
+        "habilidades": {
+            "Python": 0.11,
+            "JavaScript": 0.82,
+            "React": 0.89,
+            "SQL": 0.83,
+            "Docker": 0.12,
+            "Git": 0.28
+        }
+    },
+    {
+        "rol": "Desarrollador Frontend",
+        "tecnologia": "HTML",
+        "seniority": "Junior",
+        "habilidades": {
+            "JavaScript": 0.61,
+            "React": 0.64,
+            "HTML": 0.52,
+            "CSS": 0.9,
+            "Git": 0.54
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "Java",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Python": 0.25,
+            "Java": 0.77,
+            "SQL": 0.71,
+            "Docker": 0.02,
+            "Git": 0.83
+        }
+    },
+    {
+        "rol": "Desarrollador Frontend",
+        "tecnologia": "Git",
+        "seniority": "Junior",
+        "habilidades": {
+            "JavaScript": 0.61,
+            "React": 0.86,
+            "HTML": 0.79,
+            "CSS": 0.55,
+            "Git": 0.58
+        }
+    },
+    {
+        "rol": "Desarrollador Frontend",
+        "tecnologia": "HTML",
+        "seniority": "Junior",
+        "habilidades": {
+            "JavaScript": 0.13,
+            "React": 0.12,
+            "HTML": 0.8,
+            "CSS": 0.67,
+            "Git": 0.85
+        }
+    },
+    {
+        "rol": "Desarrollador Backend",
+        "tecnologia": "Git",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Python": 0.92,
+            "Java": 0.3,
+            "SQL": 0.5,
+            "Docker": 0.67,
+            "Git": 0.58
+        }
+    },
+    {
+        "rol": "Tester QA Automation",
+        "tecnologia": "Python",
+        "seniority": "Junior",
+        "habilidades": {
+            "Selenium": 0.57,
+            "Python": 0.9,
+            "Postman": 0.73,
+            "CI/CD": 0.19,
+            "Git": 0.07
+        }
+    },
+    {
+        "rol": "Tester QA Automation",
+        "tecnologia": "Selenium",
+        "seniority": "Junior",
+        "habilidades": {
+            "Selenium": 0.77,
+            "Python": 0.59,
+            "Postman": 0.91,
+            "CI/CD": 0.11,
+            "Git": 0.89
+        }
+    },
+    {
+        "rol": "Scrum Master",
+        "tecnologia": "Kanban",
+        "seniority": "Senior",
+        "habilidades": {
+            "Scrum": 0.2,
+            "Kanban": 0.7,
+            "Gestión de Equipos": 0.18,
+            "JIRA": 0.65,
+            "Comunicación": 0.31
+        }
+    },
+    {
+        "rol": "Desarrollador Fullstack",
+        "tecnologia": "Python",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Python": 0.51,
+            "JavaScript": 0.78,
+            "React": 0.28,
+            "SQL": 0.66,
+            "Docker": 0.87,
+            "Git": 0.19
+        }
+    },
+    {
+        "rol": "Tester QA Automation",
+        "tecnologia": "Python",
+        "seniority": "Semi Senior",
+        "habilidades": {
+            "Selenium": 0.96,
+            "Python": 0.84,
+            "Postman": 0.85,
+            "CI/CD": 0.95,
+            "Git": 0.93
+        }
+    },
+    {
+        "rol": "Desarrollador Frontend",
+        "tecnologia": "JavaScript",
+        "seniority": "Senior",
+        "habilidades": {
+            "JavaScript": 0.66,
+            "React": 0.65,
+            "HTML": 0.53,
+            "CSS": 0.34,
+            "Git": 0.04
+        }
+    }
+]

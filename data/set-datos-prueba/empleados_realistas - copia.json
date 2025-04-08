@@ -1,0 +1,32 @@
+[
+  {
+    "rol": "Desarrollador Frontend",
+    "tecnologia": "React",
+    "seniority": "Senior",
+    "habilidades": {
+      "JavaScript": 0.67,
+      "React": 0.68,
+      "CSS": 0.36
+    }
+  },
+  {
+    "rol": "Desarrollador Backend",
+    "tecnologia": "Go",
+    "seniority": "Junior",
+    "habilidades": {
+      "Go": 0.34,
+      "SQL": 0.38,
+      "Docker": 0.51
+    }
+  },
+  {
+    "rol": "Desarrollador Backend",
+    "tecnologia": "Java",
+    "seniority": "Semi Senior",
+    "habilidades": {
+      "Java": 0.4,
+      "Spring": 0.9,
+      "SQL": 0.89
+    }
+  }
+]
